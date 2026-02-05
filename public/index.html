@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart AI Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">Smart AI Chat</div>
+    <div class="right">
+      <label class="toggle">
+        <input id="useWeb" type="checkbox" checked />
+        <span>Web Search</span>
+      </label>
+      <button id="clear" class="ghost">Clear</button>
+    </div>
+  </header>
+
+  <main class="chat">
+    <div id="log" class="log" aria-live="polite"></div>
+
+    <div class="composer">
+      <textarea id="msg" rows="1" placeholder="Ask anything…"></textarea>
+      <button id="send">Send</button>
+    </div>
+    <div class="hint" id="hint">Tip: Web Search is ON for up-to-date answers.</div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
